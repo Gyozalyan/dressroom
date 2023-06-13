@@ -1,0 +1,159 @@
+/*Carousel*/
+
+.imgCarousel img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/*shop accessories*/
+
+
+.shopaccessories {
+  position: relative;
+  padding: 150px 50px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+    background-size: cover;
+}
+
+.hovering1:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(217, 18, 74, 0.4);
+  width: 100%;
+  padding: 150px 50px;
+}
+.hovering2:hover::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(217, 18, 74, 0.4);
+  width: 100%;
+  padding: 150px 50px;
+  
+}
+
+ .content {
+    position: relative;
+    z-index: 9999;
+    color:white
+ }
+
+ .actionButton {
+  top: 67%;
+  padding: 20px;
+  border: 8px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 10px 20px;
+  
+}
+
+.actionButton:hover {
+  background-color: #D9124A;
+  border: 8px solid #D9124A;
+  transition: background-color 3s ease-in-out;
+  transition-delay: 5s;
+}
+
+/*NEW ARRIVALS*/
+
+.allCategories{
+  width: 100%;
+  height: 45vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;  
+}
+
+.allCategories h2{
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.categories{
+display: flex;
+gap: 10px;
+}
+
+.categories a{
+  text-decoration: none;
+  color:#3a3a3a;
+}
+
+.galleryItem{
+  margin-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.productImg{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.productImg img{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.productImg:hover img {
+  transform: scale(1.1);
+}
+
+.productQuickView {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.productImg:hover .productQuickView {
+  display: block;
+}
+
+.productImg:hover .productQuickView a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.productImg:hover .productQuickView:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.description h4,h5{
+  font-weight: 400;
+  color: #9f9f9f;
+}
+
+.description h4{
+  margin-top: 5%;
+  font-size: 1.5rem;
+}
+
+.description h5{
+  font-size: 15px;
+}
+
